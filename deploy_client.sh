@@ -3,7 +3,7 @@ CLIENT=$1
 GEN_TYPE=$2
 
 # echo "APP_NAME=${APP_NAME}, CLIENT=${CLIENT}"
-
+echo "node version " node --version
 echo "Build client"
 if [[ $CLIENT != None ]]
 then
