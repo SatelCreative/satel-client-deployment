@@ -3,7 +3,7 @@ description: Deploys client for a webapp
 inputs:
   client-dir:
     description: Directory for client
-    required: true
+    required: false
     default: None
   generate-type:
     description: Check to see if types need generating 
