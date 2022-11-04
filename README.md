@@ -26,7 +26,7 @@ on:
           node-version: '14'
 
       - name: Deploy client
-        uses: SatelCreative/satel-client-deployment@feature/webapp-deployment-shell
+        uses: SatelCreative/satel-client-deployment@v1
         with:
           client-dir: client
           generate-type: true
