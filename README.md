@@ -3,7 +3,7 @@ This centralized GitHub action deploys client for a webapp
 
 ## Usage 
 ```yml
-name: "Client deployment"
+name: "Deploy webapp"
 on:
   pull_request:
     types:
