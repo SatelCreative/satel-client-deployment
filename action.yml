@@ -1,0 +1,18 @@
+name: Satel client deployment 
+description: Deploys client for a webapp
+inputs:
+  client-dir:
+    description: Directory for client
+    required: false
+    default: None
+  generate-type:
+    description: Check to see if types need generating 
+    required: false
+    default: None  
+
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/DeployClient.sh ${{ inputs.client-dir }} 
+        ${{ inputs.generate-type }} 
+      shell: bash
